@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghibli Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Ghibli Survey Form</h1>
+        <p class="description">
+            <strong>Hi!</strong> We’d love to know what you think about Studio Ghibli. It’s quick and easy—let’s start!
+        </p>
+        <form action="thankyou.html">
+            <!-- Question 1 -->
+            <div class="form-group">
+                <label><strong>How’s your day going?</strong></label><br>
+                <label><input type="radio" name="day" value="Amazing"> ✨ Amazing!</label><br>
+                <label><input type="radio" name="day" value="Good"> 😊 Good</label><br>
+                <label><input type="radio" name="day" value="Great"> 🔥 Behtareen (Great)</label><br>
+                <label><input type="radio" name="day" value="Mashallah"> 🌟 Mashallah</label><br>
+                <label><input type="radio" name="day" value="Wasting"> 😞 Just wasting it</label><br>
+                <label><input type="radio" name="day" value="Other"> Other:</label>
+                <input type="text" name="other_day" placeholder="Your answer">
+            </div>
+
+            <!-- Question 2 -->
+            <div class="form-group">
+                <label><strong>Your favorite Ghibli movie?</strong></label><br>
+                <select name="movie">
+                    <option value="">Select</option>
+                    <option value="Spirited Away">Spirited Away</option>
+                    <option value="My Neighbor Totoro">My Neighbor Totoro</option>
+                    <option value="Howl's Moving Castle">Howl's Moving Castle</option>
+                    <option value="Princess Mononoke">Princess Mononoke</option>
+                    <option value="Kiki's Delivery Service">Kiki's Delivery Service</option>
+                </select>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="form-group">
+                <label><strong>Which character do you relate to most?</strong></label><br>
+                <input type="text" name="character" placeholder="Character Name">
+            </div>
+
+            <!-- Question 4 -->
+            <div class="form-group">
+                <label><strong>Your favorite Studio Ghibli moment?</strong></label><br>
+                <textarea name="moment" rows="4" placeholder="Share your favorite scene..."></textarea>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="subscribe"> Add me to the mailing list!
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
